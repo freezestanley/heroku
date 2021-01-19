@@ -2,9 +2,9 @@
   "name": "heroku",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,11 @@
   "homepage": "https://github.com/freezestanley/heroku#readme",
   "dependencies": {
     "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "koa": "^2.13.1",
+    "koa-compress": "^5.0.1",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0"
   }
 }
