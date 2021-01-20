@@ -74,7 +74,8 @@ app.use(async (ctx, next) => {
  */
 app.use(mount('/dist', require('koa-static')(root)));
 
-app.listen(8888);
-console.log('http://localhost:8888');
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Listening to %s', port);
 
 module.exports = app.callback();
