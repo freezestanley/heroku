@@ -2,9 +2,9 @@
   "name": "heroku",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "koa.js",
   "scripts": {
-    "start": "node server",
+    "start": "node koa",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
