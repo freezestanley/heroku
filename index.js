@@ -4,8 +4,9 @@ const app = new Koa();
 app.use(async ctx => {
   ctx.body = 'Hello World';
 });
-console.log('http://localhost:8888')
-app.listen(8888);
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Listening to %s', port);
 
 // const http = require('http')
 // let server = http.createServer(function (req, res) {
